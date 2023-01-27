@@ -10,8 +10,8 @@ class Point implements Cloneable{
         this.x = x;
         this.y = y;
     }
-    boolean check(int x, int y){
-        return (this.x == x && this.y == y) ? true:false;    
+    String check(int x, int y){
+        return (this.x == x && this.y == y) ? "\n true the values are same":"\n false the values are same";    
     }
 
     protected Object clone() throws CloneNotSupportedException{
@@ -35,14 +35,7 @@ public class App
         p1.x = sc.nextInt();
         LOGGER.info("Enter y2:");
         p1.y = sc.nextInt();
-        String s;
-        boolean res = p.check(p1.x, p1.y);
-        if(res == true){
-            s = "\n "+res+" the values are same";
-        }
-        else{
-            s = "\n"+res+" the values are not same";
-        }
+        String s = p.check(p1.x, p1.y);
         LOGGER.info(s);
         s="Original object value x:"+p.x+" y:"+p.y;
         LOGGER.info(s);
