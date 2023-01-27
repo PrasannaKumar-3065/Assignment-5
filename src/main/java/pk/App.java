@@ -11,8 +11,7 @@ class Point implements Cloneable{
         this.y = y;
     }
     boolean check(int x, int y){
-        boolean res=(this.x == x && this.y == y) ? true:false;  
-        return res;  
+        return (this.x == x && this.y == y) ? true:false;    
     }
 
     protected Object clone() throws CloneNotSupportedException{
