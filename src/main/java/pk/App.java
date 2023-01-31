@@ -18,7 +18,7 @@ class Point{
         this.y = p.y;
     }
 
-    protected Object clone() throws CloneNotSupportedException{
+    protected Object clone(){
         return super.clone();
     }
 }
