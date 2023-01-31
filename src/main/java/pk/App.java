@@ -23,7 +23,7 @@ class Point{
     }
 }
 
-public class PointsException 
+public class App 
 {
     private static final Logger LOGGER =  Logger.getLogger("InfoLogging");
     public static void main( String[] args ) throws CloneNotSupportedException
