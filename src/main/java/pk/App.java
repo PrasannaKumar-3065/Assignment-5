@@ -24,7 +24,6 @@ public class App
     private static final Logger LOGGER =  Logger.getLogger("InfoLogging");
     public static void main( String[] args ) throws CloneNotSupportedException
     {
-        try{
         Scanner sc = new Scanner(System.in);
         LOGGER.info("Enter x1:");
         int x1 = sc.nextInt();
@@ -42,9 +41,5 @@ public class App
         LOGGER.info(s);
         s="Clonned object value x:"+p1.x+" y:"+p1.y;
         LOGGER.info(s);
-        }catch(Exception e){
-            String s = ""+e;
-            LOGGER.info(s);
-        }
     }
 }
